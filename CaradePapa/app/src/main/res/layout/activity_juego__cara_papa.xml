@@ -16,7 +16,9 @@
         android:id="@+id/cuerpo"
         android:background="@drawable/body"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:clickable="false" />
 
     <ImageView
         android:layout_width="480dp"
@@ -24,7 +26,8 @@
         android:id="@+id/ojos"
         android:background="@drawable/eyes"
         android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/cuerpo" />
+        android:layout_alignBottom="@+id/cuerpo"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="500dp"
@@ -33,7 +36,8 @@
         android:background="@drawable/nose"
         android:adjustViewBounds="false"
         android:layout_centerHorizontal="true"
-        android:layout_alignBottom="@+id/cuerpo" />
+        android:layout_alignBottom="@+id/cuerpo"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -41,7 +45,8 @@
         android:id="@+id/boca"
         android:background="@drawable/mouth"
         android:layout_alignBottom="@+id/cuerpo"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -49,7 +54,8 @@
         android:id="@+id/bigote"
         android:background="@drawable/mustache"
         android:layout_alignParentStart="true"
-        android:layout_alignBottom="@+id/cuerpo" />
+        android:layout_alignBottom="@+id/cuerpo"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="320dp"
@@ -57,7 +63,8 @@
         android:id="@+id/pies"
         android:background="@drawable/shoes"
         android:layout_alignBottom="@+id/cuerpo"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="285dp"
@@ -65,7 +72,8 @@
         android:id="@+id/brazos"
         android:background="@drawable/arms"
         android:layout_alignTop="@+id/cuerpo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -74,7 +82,8 @@
         android:background="@drawable/ears"
         android:layout_alignTop="@+id/cuerpo"
         android:layout_alignEnd="@+id/cuerpo"
-        android:layout_alignStart="@+id/cuerpo" />
+        android:layout_alignStart="@+id/cuerpo"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="500dp"
@@ -82,7 +91,8 @@
         android:id="@+id/gafas"
         android:background="@drawable/glasses"
         android:layout_alignBottom="@+id/cuerpo"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="250dp"
@@ -90,7 +100,8 @@
         android:id="@+id/sombrero"
         android:background="@drawable/hat"
         android:layout_alignTop="@+id/cuerpo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
 
     <ImageView
         android:layout_width="200dp"
@@ -99,7 +110,8 @@
         android:background="@drawable/eyebrows"
         android:layout_alignBottom="@+id/cuerpo"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp" />
+        android:layout_marginBottom="27dp"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -143,7 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Boca"
-            android:id="@+id/id_Boca"
+            android:id="@+id/id_boca"
             android:layout_row="0"
             android:layout_column="1"
             android:checked="false"

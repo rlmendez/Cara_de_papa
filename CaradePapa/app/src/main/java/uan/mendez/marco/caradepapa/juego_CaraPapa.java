@@ -4,13 +4,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View.OnClickListener;
+import android.widget.CheckBox;
 
-public class juego_CaraPapa extends AppCompatActivity {
+
+public class juego_CaraPapa extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego__cara_papa);
+
+        CheckBox ojos = (CheckBox) findViewById(R.id.id_ojos);
+        ojos.setOnClickListener((OnClickListener) this);
+
+        CheckBox bigote = (CheckBox) findViewById(R.id.id_bigote);
+        bigote.setOnClickListener((OnClickListener) this);
+
+        CheckBox boca = (CheckBox) findViewById(R.id.id_boca);
+        boca.setOnClickListener((OnClickListener) this);
+
+        CheckBox brazos = (CheckBox) findViewById(R.id.id_brazos);
+        brazos.setOnClickListener((OnClickListener) this);
+
+        CheckBox cejas = (CheckBox) findViewById(R.id.id_cejas);
+        cejas.setOnClickListener((OnClickListener) this);
+
+        CheckBox cuerpo = (CheckBox) findViewById(R.id.id_cuerpo);
+        cuerpo.setOnClickListener((OnClickListener) this);
+
+        
+
     }
 
     @Override
@@ -34,4 +58,6 @@ public class juego_CaraPapa extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
