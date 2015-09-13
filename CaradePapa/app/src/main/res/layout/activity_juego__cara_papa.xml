@@ -116,14 +116,16 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="3"
+        android:columnCount="4"
         android:rowCount="4"
         android:layout_below="@+id/text_partes"
         android:layout_alignStart="@+id/brazos"
         android:background="#ffffff"
         android:padding="2dp"
         android:id="@+id/partes"
-        android:focusable="false">
+        android:focusable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -134,51 +136,68 @@
             android:layout_column="0"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cuerpo"
-            android:id="@+id/id_cuerpo"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:checked="@bool/abc_action_bar_embed_tabs"
-            android:clickable="true"
-            android:padding="2dp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sombrero"
-            android:id="@+id/id_sombrero"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:checked="false"
-            android:clickable="true"
-            android:padding="2dp" />
+            android:padding="1dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Boca"
             android:id="@+id/id_Boca"
-            android:layout_row="1"
-            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_column="1"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
+            android:padding="1dp"
+            android:textSize="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orejas"
+            android:id="@+id/id_orejas"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:checked="false"
+            android:clickable="true"
+            android:padding="1dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bigote"
             android:id="@+id/id_bigote"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:checked="false"
+            android:clickable="true"
+            android:padding="2dp"
+            android:textSize="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuerpo"
+            android:id="@+id/id_cuerpo"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:checked="@bool/abc_action_bar_embed_tabs"
+            android:clickable="true"
+            android:padding="2dp"
+            android:textSize="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sombrero"
+            android:id="@+id/id_sombrero"
             android:layout_row="1"
             android:layout_column="1"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
+            android:padding="2dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -189,7 +208,20 @@
             android:layout_column="2"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
+            android:padding="2dp"
+            android:textSize="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pies"
+            android:id="@+id/id_pies"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:checked="false"
+            android:clickable="true"
+            android:padding="1dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -200,7 +232,8 @@
             android:layout_column="0"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
+            android:padding="1dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -211,40 +244,20 @@
             android:layout_column="1"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pies"
-            android:id="@+id/id_pies"
-            android:layout_row="2"
-            android:layout_column="2"
-            android:checked="false"
-            android:clickable="true"
-            android:padding="2dp" />
+            android:padding="1dp"
+            android:textSize="10dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nariz"
             android:id="@+id/id_nariz"
-            android:layout_row="3"
-            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_column="2"
             android:checked="false"
             android:clickable="true"
-            android:padding="2dp" />
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Orejas"
-            android:id="@+id/id_orejas"
-            android:layout_row="3"
-            android:layout_column="1"
-            android:checked="false"
-            android:clickable="true"
-            android:padding="2dp" />
+            android:padding="1dp"
+            android:textSize="10dp" />
 
     </GridLayout>
 
