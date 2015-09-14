@@ -4,37 +4,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View.OnClickListener;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.CheckBox;
 
 
 public class juego_CaraPapa extends AppCompatActivity  {
+
+    CheckBox ojos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego__cara_papa);
 
-        CheckBox ojos = (CheckBox) findViewById(R.id.id_ojos);
-        ojos.setOnClickListener((OnClickListener) this);
-
-        CheckBox bigote = (CheckBox) findViewById(R.id.id_bigote);
-        bigote.setOnClickListener((OnClickListener) this);
-
-        CheckBox boca = (CheckBox) findViewById(R.id.id_boca);
-        boca.setOnClickListener((OnClickListener) this);
-
-        CheckBox brazos = (CheckBox) findViewById(R.id.id_brazos);
-        brazos.setOnClickListener((OnClickListener) this);
-
-        CheckBox cejas = (CheckBox) findViewById(R.id.id_cejas);
-        cejas.setOnClickListener((OnClickListener) this);
-
-        CheckBox cuerpo = (CheckBox) findViewById(R.id.id_cuerpo);
-        cuerpo.setOnClickListener((OnClickListener) this);
-
-        
-
+        iniciar_checbox();
     }
 
     @Override
@@ -57,6 +41,46 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void iniciar_checbox()
+    {
+        CheckBox ojos = (CheckBox) findViewById(R.id.id_ojos);
+
+        CheckBox bigote = (CheckBox) findViewById(R.id.id_bigote);
+
+        CheckBox boca = (CheckBox) findViewById(R.id.id_boca);
+
+        CheckBox brazos = (CheckBox) findViewById(R.id.id_brazos);
+
+        CheckBox cejas = (CheckBox) findViewById(R.id.id_cejas);
+
+        CheckBox cuerpo = (CheckBox) findViewById(R.id.id_cuerpo);
+
+        CheckBox gafas = (CheckBox) findViewById(R.id.id_gafas);
+
+        CheckBox nariz = (CheckBox) findViewById(R.id.id_nariz);
+
+        CheckBox orejas = (CheckBox) findViewById(R.id.id_orejas);
+
+        CheckBox pies = (CheckBox) findViewById(R.id.id_pies);
+
+        CheckBox sombrero = (CheckBox) findViewById(R.id.id_sombrero);
+
+    }
+
+    public void vis_ojos(View v)
+    {
+        ImageView ojo = (ImageView) findViewById(R.id.ojos);
+
+        if(ojos.isChecked())
+        {
+            ojo.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            ojo.setVisibility(ImageView.INVISIBLE);
+        }
     }
 
 
