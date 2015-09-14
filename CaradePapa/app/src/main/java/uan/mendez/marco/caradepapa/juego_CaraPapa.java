@@ -11,7 +11,8 @@ import android.widget.CheckBox;
 
 public class juego_CaraPapa extends AppCompatActivity  {
 
-    CheckBox ojos;
+    CheckBox ojos,bigote,boca,brazos,cejas,cuerpo,gafas,nariz,orejas,pies,sombrero;
+    ImageView ojo,big,boc,bra,cej,cue,gaf,nar,ore,pie,som;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
 
         iniciar_checbox();
         imagenes();
+
     }
 
     @Override
@@ -97,8 +99,8 @@ public class juego_CaraPapa extends AppCompatActivity  {
 
     }
 
-    public void vis_ojos(ImageView ojo)
-    {
+
+    private void vis_ojos(View v) {
 
         if(ojos.isChecked())
         {
@@ -109,5 +111,114 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
+    private void vis_bigote(View v) {
+
+        if(bigote.isChecked())
+        {
+            big.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            big.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_boca(View v) {
+
+        if(boca.isChecked())
+        {
+            boc.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            boc.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_brazos(View v) {
+
+        if(brazos.isChecked())
+        {
+            bra.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            bra.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_ceja(View v) {
+
+        if(cejas.isChecked())
+        {
+            cej.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            cej.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_cuerpo(View v) {
+
+        if(cuerpo.isChecked())
+        {
+            cue.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            cue.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_gafas(View v) {
+
+        if(gafas.isChecked())
+        {
+            gaf.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            gaf.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_nariz(View v) {
+
+        if(nariz.isChecked())
+        {
+            nar.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            nar.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_orejas(View v) {
+
+        if(orejas.isChecked())
+        {
+            ore.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            ore.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_pies(View v) {
+
+        if(pies.isChecked())
+        {
+            pie.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            pie.setVisibility(ImageView.INVISIBLE);
+        }
+    }
+
+    private void vis_sombrero(View v) {
+
+        if(sombrero.isChecked())
+        {
+            som.setVisibility(ImageView.VISIBLE);
+        }
+        else{
+            som.setVisibility(ImageView.INVISIBLE);
+        }
+    }
 
 }
