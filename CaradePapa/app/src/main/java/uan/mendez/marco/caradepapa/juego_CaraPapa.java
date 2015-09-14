@@ -19,6 +19,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         setContentView(R.layout.activity_juego__cara_papa);
 
         iniciar_checbox();
+        imagenes();
     }
 
     @Override
@@ -70,9 +71,34 @@ public class juego_CaraPapa extends AppCompatActivity  {
 
     }
 
-    public void vis_ojos(View v)
+    public void imagenes()
     {
         ImageView ojo = (ImageView) findViewById(R.id.ojos);
+
+        ImageView big = (ImageView) findViewById(R.id.bigote);
+
+        ImageView boc = (ImageView) findViewById(R.id.boca);
+
+        ImageView bra = (ImageView) findViewById(R.id.brazos);
+
+        ImageView cej = (ImageView) findViewById(R.id.cejas);
+
+        ImageView cue = (ImageView) findViewById(R.id.cuerpo);
+
+        ImageView gaf = (ImageView) findViewById(R.id.gafas);
+
+        ImageView nar = (ImageView) findViewById(R.id.nariz);
+
+        ImageView ore = (ImageView) findViewById(R.id.orejas);
+
+        ImageView pie = (ImageView) findViewById(R.id.pies);
+
+        ImageView som = (ImageView) findViewById(R.id.sombrero);
+
+    }
+
+    public void vis_ojos(ImageView ojo)
+    {
 
         if(ojos.isChecked())
         {
