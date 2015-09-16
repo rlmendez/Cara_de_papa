@@ -4,11 +4,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".juego_CaraPapa"
-    android:focusable="true"
+    android:focusable="false"
     android:touchscreenBlocksFocus="false"
     android:id="@+id/fonodo"
     android:clickable="false"
-    android:background="#000000">
+    android:background="#000000"
+    android:onClick="vis_ojos">
 
     <ImageView
         android:layout_width="300dp"
@@ -150,7 +151,8 @@
             android:clickable="true"
             android:padding="1dp"
             android:textSize="10dp"
-            android:nestedScrollingEnabled="false" />
+            android:nestedScrollingEnabled="false"
+            android:onClick="vis_ojos" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -162,7 +164,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_boca" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -174,7 +177,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_orejas" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -186,7 +190,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="2dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_bigote" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -198,7 +203,8 @@
             android:checked="@bool/abc_action_bar_embed_tabs"
             android:clickable="true"
             android:padding="2dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_cuerpo" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -210,7 +216,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="2dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_sombrero" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -222,7 +229,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="2dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_brazos" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -234,7 +242,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_pies" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -246,7 +255,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_ceja" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -258,7 +268,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_gafas" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -270,7 +281,8 @@
             android:checked="false"
             android:clickable="true"
             android:padding="1dp"
-            android:textSize="10dp" />
+            android:textSize="10dp"
+            android:onClick="vis_nariz" />
 
     </GridLayout>
 

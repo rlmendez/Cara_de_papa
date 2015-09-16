@@ -49,60 +49,60 @@ public class juego_CaraPapa extends AppCompatActivity  {
 
     public void iniciar_checbox()
     {
-        CheckBox ojos = (CheckBox) findViewById(R.id.id_ojos);
+        this.ojos = (CheckBox) findViewById(R.id.id_ojos);
 
-        CheckBox bigote = (CheckBox) findViewById(R.id.id_bigote);
+        this.bigote = (CheckBox) findViewById(R.id.id_bigote);
 
-        CheckBox boca = (CheckBox) findViewById(R.id.id_boca);
+        this.boca = (CheckBox) findViewById(R.id.id_boca);
 
-        CheckBox brazos = (CheckBox) findViewById(R.id.id_brazos);
+        this.brazos = (CheckBox) findViewById(R.id.id_brazos);
 
-        CheckBox cejas = (CheckBox) findViewById(R.id.id_cejas);
+        this.cejas = (CheckBox) findViewById(R.id.id_cejas);
 
-        CheckBox cuerpo = (CheckBox) findViewById(R.id.id_cuerpo);
+        this.cuerpo = (CheckBox) findViewById(R.id.id_cuerpo);
 
-        CheckBox gafas = (CheckBox) findViewById(R.id.id_gafas);
+        this.gafas = (CheckBox) findViewById(R.id.id_gafas);
 
-        CheckBox nariz = (CheckBox) findViewById(R.id.id_nariz);
+        this.nariz = (CheckBox) findViewById(R.id.id_nariz);
 
-        CheckBox orejas = (CheckBox) findViewById(R.id.id_orejas);
+        this.orejas = (CheckBox) findViewById(R.id.id_orejas);
 
-        CheckBox pies = (CheckBox) findViewById(R.id.id_pies);
+        this.pies = (CheckBox) findViewById(R.id.id_pies);
 
-        CheckBox sombrero = (CheckBox) findViewById(R.id.id_sombrero);
+        this.sombrero = (CheckBox) findViewById(R.id.id_sombrero);
 
     }
 
     public void imagenes()
     {
-        ImageView ojo = (ImageView) findViewById(R.id.ojos);
+        this.ojo = (ImageView) findViewById(R.id.ojos);
 
-        ImageView big = (ImageView) findViewById(R.id.bigote);
+        this.big = (ImageView) findViewById(R.id.bigote);
 
-        ImageView boc = (ImageView) findViewById(R.id.boca);
+        this.boc = (ImageView) findViewById(R.id.boca);
 
-        ImageView bra = (ImageView) findViewById(R.id.brazos);
+        this.bra = (ImageView) findViewById(R.id.brazos);
 
-        ImageView cej = (ImageView) findViewById(R.id.cejas);
+        this.cej = (ImageView) findViewById(R.id.cejas);
 
-        ImageView cue = (ImageView) findViewById(R.id.cuerpo);
+        this.cue = (ImageView) findViewById(R.id.cuerpo);
 
-        ImageView gaf = (ImageView) findViewById(R.id.gafas);
+        this.gaf = (ImageView) findViewById(R.id.gafas);
 
-        ImageView nar = (ImageView) findViewById(R.id.nariz);
+        this.nar = (ImageView) findViewById(R.id.nariz);
 
-        ImageView ore = (ImageView) findViewById(R.id.orejas);
+        this.ore = (ImageView) findViewById(R.id.orejas);
 
-        ImageView pie = (ImageView) findViewById(R.id.pies);
+        this.pie = (ImageView) findViewById(R.id.pies);
 
-        ImageView som = (ImageView) findViewById(R.id.sombrero);
+        this.som = (ImageView) findViewById(R.id.sombrero);
 
     }
 
 
-    private void vis_ojos(View v) {
+    public void vis_ojos(View v) {
 
-        if(ojos.isChecked())
+       if(ojos.isChecked())
         {
             ojo.setVisibility(ImageView.VISIBLE);
         }
@@ -111,7 +111,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_bigote(View v) {
+    public void vis_bigote(View v) {
 
         if(bigote.isChecked())
         {
@@ -122,7 +122,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_boca(View v) {
+    public void vis_boca(View v) {
 
         if(boca.isChecked())
         {
@@ -133,7 +133,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_brazos(View v) {
+    public void vis_brazos(View v) {
 
         if(brazos.isChecked())
         {
@@ -144,7 +144,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_ceja(View v) {
+    public void vis_ceja(View v) {
 
         if(cejas.isChecked())
         {
@@ -155,7 +155,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_cuerpo(View v) {
+    public void vis_cuerpo(View v) {
 
         if(cuerpo.isChecked())
         {
@@ -166,7 +166,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_gafas(View v) {
+    public void vis_gafas(View v) {
 
         if(gafas.isChecked())
         {
@@ -177,7 +177,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_nariz(View v) {
+    public void vis_nariz(View v) {
 
         if(nariz.isChecked())
         {
@@ -188,7 +188,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_orejas(View v) {
+    public void vis_orejas(View v) {
 
         if(orejas.isChecked())
         {
@@ -199,7 +199,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_pies(View v) {
+    public void vis_pies(View v) {
 
         if(pies.isChecked())
         {
@@ -210,7 +210,7 @@ public class juego_CaraPapa extends AppCompatActivity  {
         }
     }
 
-    private void vis_sombrero(View v) {
+    public void vis_sombrero(View v) {
 
         if(sombrero.isChecked())
         {
